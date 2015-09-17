@@ -1,0 +1,72 @@
+tei-surface {
+	margin: auto;
+	padding: auto;
+	display: block;
+	width: 35em;
+	font-family: Georgia, serif;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+tei-zone {
+	display: block;
+	padding: .5em 0em .5em 0em;
+}
+
+tei-zone[type=pagination], tei-zone[type=library] {
+	text-align: right;
+}
+
+tei-zone[type=main] {
+	margin-left:10em;
+}
+
+tei-zone[type=left_margin] {
+	position:absolute;
+	width: 10em;
+}
+
+tei-line {
+	display: block;
+	white-space: nowrap;
+}
+
+*[rend=indent1] {
+	padding-left: 2em;
+}
+
+*[rend=indent2] {
+	padding-left: 4em;
+}
+
+tei-milestone[unit^=tei] {
+	display: none;
+}
+
+tei-del {
+	font-weight: lighter;
+	color: #888888;
+	text-decoration: line-through;
+}
+
+tei-del[rend=strikethrough] {}
+
+tei-del[rend=overwritten] {}
+
+tei-add {
+	font-style: italic;
+}
+
+tei-add[place=superlinear] {
+	margin-top: -1em;
+	position: absolute;
+	display: inline;
+	font-size: smaller;
+}
+
+tei-add[place=sublinear] {
+	margin-top: 1.2em;
+	position: absolute;
+	display: inline;
+	font-size: smaller;
+}
