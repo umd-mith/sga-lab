@@ -1,0 +1,21 @@
+{
+  "name": "hTEI",
+  "version": "0.0.0",
+  "description": "Annotate SGA TEI documents with Hypothesis",
+  "main": "dist/hTEI.js",
+  "author": "Raff Viglianti",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "~1.9.3"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "TEIditto": "git://github.com/raffazizzi/TEIditto.git#master",
+    "download-cli": "~1.0.1"
+  },
+  "scripts": {
+    "install": "download --out node_modules/annotator https://github.com/openannotation/annotator/releases/download/v2.0.0-alpha.3/annotator.min.js",
+    "build:TEIditto": "coffee -c -o node_modules/TEIditto/dist node_modules/TEIditto/src/TEIditto.coffee",
+    "build": "coffee -c -o js src/hTEI.coffee"
+  }
+}
