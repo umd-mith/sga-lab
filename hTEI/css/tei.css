@@ -70,3 +70,22 @@ tei-add[place=sublinear] {
 	display: inline;
 	font-size: smaller;
 }
+
+/*** TEMP COMPONENT STYLE ***/
+body {
+	font-family: Georgia, serif;
+}
+
+#loadContainer {
+	padding: 1em;
+}
+
+#teiUrl {
+	width : 80%;
+}
+
+#status {
+	background-color: #CC2900;
+	font-weight: bolder;
+	font-size: 110%; 
+}
