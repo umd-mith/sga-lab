@@ -17,7 +17,7 @@
     </zone>
     <!-- use <milestone unit="tei:p"/> instead?-->
     <space dim="horizontal" unit="lines" extent="2"></space>
-    <zone type="main">
+    <zone>
         <!--Removed the 180 rotation just for a test-->
         <line>Originality does not consist</line>
         <line><del rend="strikethrough"> in words &amp; names, or stories</del></line>
