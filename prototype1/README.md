@@ -25,3 +25,7 @@ These last two steps will eventually be automated. Hopefully. One day. I'm just 
 ```
 $ npm run dev
 ```
+
+## Live demo (may not be always up to date)
+
+[Here](http://umd-mith.github.io/sga-lab/prototype1/)
