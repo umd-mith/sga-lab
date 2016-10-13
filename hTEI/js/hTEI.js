@@ -4,13 +4,11 @@
 
   url = $("#teiUrl").val();
 
-  url = url.replace("https://raw.githubusercontent.com", "https://rawgit.com");
   url = url.replace("https://raw.github.com", "https://rawgit.com");
 
   $("#loadTEI").submit(function(e) {
     e.preventDefault();
     url = $("#teiUrl").val();
-    url = url.replace("https://raw.githubusercontent.com", "https://rawgit.com");
     url = url.replace("https://raw.github.com", "https://rawgit.com");
     $("#TEI").html("");
     return run();
