@@ -1,6 +1,6 @@
 # Prototype 1
 
-This is a prototype for a new S-GA viewer based on [Mirador](https://github.com/ProjectMirador/mirador) for rendering IIIF manifests and [CETEIcean](https://github.com/TEiC/CETEIcean) for rendering TEI in isomorphic HTML5.
+This  is a prototype for a new S-GA viewer based on [Mirador](https://github.com/ProjectMirador/mirador) for rendering IIIF manifests and [CETEIcean](https://github.com/TEiC/CETEIcean) for rendering TEI in isomorphic HTML5.
 
 ## Installation
 
