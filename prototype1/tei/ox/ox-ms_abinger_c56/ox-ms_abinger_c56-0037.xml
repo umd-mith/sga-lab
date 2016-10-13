@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../schemata/shelley-godwin-page.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<surface xmlns="http://www.tei-c.org/ns/1.0" xmlns:mith="http://mith.umd.edu/sc/ns1#"
+  xml:id="ox-ms_abinger_c56-0037" ulx="0" uly="0" lrx="5364" lry="7104"
+  mith:shelfmark="MS. Abinger c. 56" mith:folio="17r" partOf="#ox-frankenstein_volume_i">
+  <graphic url="http://shelleygodwinarchive.org/images/ox/ms_abinger_c56/ms_abinger_c56-0037.jp2"/>
+  <zone type="pagination" rend="bordered"><line>67</line></zone>
+  <zone type="library">17</zone>
+  <zone type="main">
+    <line>infallible misery. Learn from me, if</line>
+    <line>not by my precepts at least by my exam</line>
+    <line>ple, how dangerous is the acquirement</line>
+    <line>of knowledge and how much happier</line>
+    <line>that man is who believes his native</line>
+    <line>town the world, than he <del rend="strikethrough">who<unclear>nto</unclear></del></line>
+    <line>aspires to become greater than his</line>
+    <line>nature <del rend="strikethrough">allows.</del> will allow.</line>
+  </zone>
+</surface>
