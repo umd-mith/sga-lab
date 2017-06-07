@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="lib/mirador/css/mirador-combined.css">
-    <link rel="stylesheet" type="text/css" href="src/css/teisurface.css">
+    <link rel="stylesheet" type="text/css" href="../lib/mirador/css/mirador-combined.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/teisurface.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
@@ -25,11 +25,11 @@
       <h1>MS Shelley Adds C. 4</h1>
       <h2>Page: <span id="cur_page"></span></h2>
       <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-primary active">
-          <input type="radio" name="encoder" id="victoria" autocomplete="off" checked> Victoria
-        </label>
         <label class="btn btn-primary">
-          <input type="radio" name="encoder" id="charlie" autocomplete="off"> Charlie
+          <input type="radio" name="encoder" id="victoria" autocomplete="off" > Victoria
+        </label>
+        <label class="btn btn-primary active">
+          <input type="radio" name="encoder" id="charlie" autocomplete="off" checked> Charlie
         </label>
       </div>
     </div>
@@ -54,14 +54,14 @@
     </div>
 
 
-    <script src="lib/mirador/mirador.js"></script>
-    <script src="dist/pt1.js"></script>
+    <script src="../lib/mirador/mirador.js"></script>
+    <script src="../dist/pt1.js"></script>
     <script>
       var page = 1
       var hash = window.location.hash.substring(window.location.hash.indexOf('#')+1);
       if (hash != "") page = hash
-      startpt1("https://raw.githubusercontent.com/umd-mith/sga-lab/gh-pages/c4/manifests/ox-ms_shelley_adds_c4_vs.json", page)
-      // startpt1("manifests/ox-ms_shelley_adds_c4_vs.json", page)
+      startpt1("https://raw.githubusercontent.com/umd-mith/sga-lab/gh-pages/c4/manifests/ox-ms_shelley_adds_c4.json", page)
+      // startpt1("../manifests/ox-ms_shelley_adds_c4.json", 1)
     </script>
   </body>
 </html>
