@@ -138,4 +138,4 @@ var hash = window.location.hash.substring(window.location.hash.indexOf('#')+1);
 if (hash != "") page = hash
 
 // var url = "https://raw.githubusercontent.com/umd-mith/sga-lab/master/c4/manifests/ox-ms_shelley_adds_c4.json"
-start("manifests/ox-ms_shelley_adds_c4.json", page)
+start("manifests/ox-ms_shelley_adds_c4_vs.json", page)
