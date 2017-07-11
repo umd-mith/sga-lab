@@ -1,0 +1,14 @@
+{
+  "name": "sga-tabula-rasa",
+  "version": "0.0.0",
+  "description": "Node.js script to create S-GA IIIF manifests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raff Viglianti",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "tabula-rasa": "^1.0.9"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="lib/mirador/css/mirador-combined.css">
+    <link rel="stylesheet" type="text/css" href="src/css/teisurface.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <title>SGA Proofing - e11</title>
+
+    <style>
+    #IIIF {
+      min-height: 800px;
+    }
+    #TEI {
+      height: 100vh;
+    }
+    </style>
+
+  </head>
+  <body class="container">
+    <div style="text-align:center; padding: 1em">
+      <h1>MS Shelley Adds E. 11</h1>
+      <h2>Page: <span id="cur_page"></span></h2>
+      <!--<div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+          <input type="radio" name="encoder" id="victoria" autocomplete="off" checked> Victoria
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="encoder" id="charlie" autocomplete="off"> Charlie
+        </label>
+      </div>-->
+    </div>
+
+    <div class="dropdown pull-right">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Go to page
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="pages">
+      </div>
+    </div>
+
+    <nav>
+      <div class="btn-group pull-right" role="group">
+        <button type="button" class="btn btn-secondary" id='mprev'> &lt; </button>
+        <button type="button" class="btn btn-secondary" id='mnext'> &gt; </button>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-6 col-xs-12" id="IIIF"></div>
+      <div class="col-md-6 col-xs-12" id="TEI"></div>
+    </div>
+
+
+    <script src="lib/mirador/mirador.js"></script>
+    <script src="dist/pt1.js"></script>
+    <script>
+      var page = 1
+      var hash = window.location.hash.substring(window.location.hash.indexOf('#')+1);
+      if (hash != "") page = hash
+      // startpt1("https://raw.githubusercontent.com/umd-mith/sga-lab/gh-pages/c4/manifests/ox-ms_shelley_adds_c4_vs.json", page)
+      startpt1("manifests/ox-ms_shelley_adds_e11.json", page)
+    </script>
+  </body>
+</html>
